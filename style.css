@@ -1,0 +1,85 @@
+/* body {
+    display: flex;
+    /* flex-wrap: wrap;
+    flex: 1;
+} */
+
+.header {
+    border: solid 1px red;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.container1 {
+    border: solid 1px red;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.container2 {
+    border: solid 1px red;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2_logos {
+    border: solid 1px red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 {
+    border: solid 1px red;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.container4 {
+    border: solid 1px red;
+    display: flex;
+    justify-content: center;
+}
+
+.container4_text {
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    border: solid 1px red;
+    display: flex;
+}
+
+.main-logo {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+}
+
+.other-logos {
+    height: 200px;
+    width: 200px;
+}
+
+ul {
+    /* this removes the dots on the list items*/
+    list-style-type: none;
+    /* this makes items list items use the full box */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
