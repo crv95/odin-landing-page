@@ -1,10 +1,15 @@
-/* body {
-    display: flex;
-    /* flex-wrap: wrap;
-    flex: 1;
-} */
+body {
+    font-family: 'Roboto', arial;
+}
 
-.header {
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header-box {
     border: solid 1px red;
     display: flex;
     flex: 1;
@@ -13,14 +18,34 @@
     padding: 8px;
 }
 
-.container1 {
-    border: solid 1px red;
-    display: flex;
-    flex: 1;
-    align-items: center;
+.header-box img {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
 }
 
-.container2 {
+/* Hero */
+
+.hero-box {
+    border: solid 1px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2 1 auto;
+    padding: 90px;
+}
+
+.hero-headline {
+    margin-right: 50px;
+}
+
+.hero-image {
+    width: 400px;
+    height: auto;
+}
+/* Information */
+
+.info-box {
     border: solid 1px red;
     display: flex;
     flex: 1;
@@ -28,25 +53,38 @@
     align-items: center;
 }
 
-.container2_logos {
-    border: solid 1px red;
+.info-content {
+    border: solid 1px blue;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.logo-text{
+.pic-text img {
+    height: 200px;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.pic-text{
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
-.container3 {
+/* Quote */
+
+.quote-box {
     border: solid 1px red;
+    background-color: #E5E7EB;
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.container4 {
+/* Sign up */
+
+.sign-up-box {
     border: solid 1px red;
     display: flex;
     justify-content: center;
@@ -54,25 +92,24 @@
 
 .container4_text {
     border: solid 1px red;
+    background-color: #3882F6;
     display: flex;
     flex-direction: column;
 }
 
+/* Footer */
+
 .footer {
     border: solid 1px red;
     display: flex;
+    justify-content: center;
 }
 
-.main-logo {
-    height: 50px;
-    width: 50px;
-    margin: 8px;
-}
+/* Styles */
 
-.other-logos {
-    height: 200px;
-    width: 200px;
-}
+
+
+
 
 ul {
     /* this removes the dots on the list items*/
@@ -83,3 +120,59 @@ ul {
     padding: 0;
     gap: 16px;
 }
+
+a {
+    color: #e5e7eb;
+    font-size: 18px;
+    /* this removes the line under the links */
+    text-decoration: none;
+  }
+
+
+.p-hero, 
+.p-footer {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+.header-box,
+.hero-box,
+.footer-box {
+    background-color: #1F2937;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+h3 {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+}
+
+.hero-button,
+.cta-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: solid 1px whitesmoke;
+    border-radius: 4px;
+}
+
+
+
