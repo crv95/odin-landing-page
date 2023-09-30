@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', arial;
+    margin: 0;
 }
 
 .container {
@@ -10,7 +11,6 @@ body {
 /* Header */
 
 .header-box {
-    border: solid 1px red;
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -20,96 +20,9 @@ body {
 
 .header-box img {
     height: 50px;
-    width: 50px;
+    width: auto;
     margin: 8px;
 }
-
-/* Hero */
-
-.hero-box {
-    border: solid 1px red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 2 1 auto;
-    padding: 90px;
-}
-
-.hero-headline {
-    margin-right: 50px;
-}
-
-.hero-image {
-    width: 400px;
-    height: auto;
-}
-/* Information */
-
-.info-box {
-    border: solid 1px red;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-}
-
-.info-content {
-    border: solid 1px blue;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.pic-text img {
-    height: 200px;
-    width: 200px;
-    flex-shrink: 0;
-}
-
-.pic-text{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-/* Quote */
-
-.quote-box {
-    border: solid 1px red;
-    background-color: #E5E7EB;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
-/* Sign up */
-
-.sign-up-box {
-    border: solid 1px red;
-    display: flex;
-    justify-content: center;
-}
-
-.container4_text {
-    border: solid 1px red;
-    background-color: #3882F6;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Footer */
-
-.footer {
-    border: solid 1px red;
-    display: flex;
-    justify-content: center;
-}
-
-/* Styles */
-
-
-
-
 
 ul {
     /* this removes the dots on the list items*/
@@ -128,23 +41,18 @@ a {
     text-decoration: none;
   }
 
+/* Hero */
 
-.p-hero, 
-.p-footer {
-    color: #e5e7eb;
-    font-size: 18px;
+.hero-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2 1 auto;
+    padding: 90px;
 }
 
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-.header-box,
-.hero-box,
-.footer-box {
-    background-color: #1F2937;
+.hero-headline {
+    margin-right: 50px;
 }
 
 h1 {
@@ -153,26 +61,146 @@ h1 {
     color: #F9FAF8;
 }
 
+.hero-image {
+    width: 400px;
+    min-width: 200px;
+    height: auto;
+}
+
+.hero-box button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: solid 1px whitesmoke;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.hero-box p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* Information */
+
+.info-box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
 h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
 }
 
-h3 {
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pic-text img {
+    height: 200px;
+    width: 200px;
+    flex-shrink: 0;
+    border: solid 4px #3882F6;
+    border-radius: 4px;
+    margin: 16px;
+    margin-bottom: 0;
+}
+
+.pic-text{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* Quote */
+
+.quote-box {
+    background-color: #E5E7EB;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px 20px 80px;
+}
+
+.quote-text h3 {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
 }
 
-.hero-button,
-.cta-button {
+.quote-text p {
+    margin: -16px 0 0 0;
+    font-size: larger;
+    text-align: end;
+}
+
+
+/* Sign up */
+
+.sign-up-box {
+    background-color: #3882F6;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 120px;
+}
+
+.sign-up-text {
+    color: #F9FAF8;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.cta-main {
+    font-size: large;
+    font-weight: 700;
+}
+
+.sign-up-box button {
     background-color: #3882F6;
     color: #F9FAF8;
     border: solid 1px whitesmoke;
     border-radius: 4px;
+    padding: 8px;
 }
+
+/* Footer */
+
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Styles */
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-box,
+.hero-box,
+.footer-box {
+    background-color: #1F2937;
+}
+
 
 
 
